@@ -11,6 +11,7 @@ for i in range(len(inputWord)):
         
 inputWord = "".join(newWord)
 print(inputWord)
+#end of program
 
 
     
