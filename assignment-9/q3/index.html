@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Amazon Logo">
+    </div>
+
+    <div class="location">
+        <button class="dropdown-btn">Deliver to ▼</button>
+        <ul class="dropdown-content">
+            <li><a href="#">Surat</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Delhi</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Chennai</a></li>
+        </ul>
+    </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search Amazon.in" class="search-bar">
+        <button type="submit" class="search-button">
+            <img src="search.png" alt="Search">
+        </button>
+    </div>
+
+    <div class="nav-links">
+        <a href="#">Hello, Sign in</a>
+        <a href="#">Returns & Orders</a>
+        <a href="#">Cart 🛒</a>
+    </div>
+</header>
+
+<!-- Main Banner -->
+<section class="main-banner">
+    <img src="banner.jpg" alt="Amazon Banner">
+</section>
+
+<!-- Product Categories -->
+<section class="categories">
+    <div class="category">
+        <h3>Winter Collection</h3>
+        <img src="coat.jpg" alt="Coat">
+        <p>Up to 50% off</p>
+    </div>
+    <div class="category">
+        <h3>Fitness Essentials</h3>
+        <img src="fitness.jpeg" alt="Fitness">
+        <p>Best Deals on Equipment</p>
+    </div>
+    <div class="category">
+        <h3>Latest Fashion</h3>
+        <img src="clothes.jpeg" alt="Clothing">
+        <p>Trendy Styles at Low Prices</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Amazon. All rights reserved.</p>
+</footer>
+
+<script>
+    let timeout;
+    document.querySelector('.location').addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+        document.querySelector('.dropdown-content').style.display = 'block';
+    });
+
+    document.querySelector('.location').addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+            document.querySelector('.dropdown-content').style.display = 'none';
+        }, 300);
+    });
+</script>
+
+</body>
+</html>

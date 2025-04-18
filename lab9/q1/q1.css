@@ -1,0 +1,146 @@
+.zomato {
+    background-image: url('zomato\ 5.35.46\ PM.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 500px; 
+    width: 100vw; 
+    color: white;
+}
+
+#zomNav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px; 
+    padding-right: 20px; 
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+}
+
+#zomTitle{
+    padding: 30px;
+    font-size: 74px;
+    display: flex;
+    font-weight: 1000;
+    justify-self: center;
+    font-style: italic;
+}
+#tagline {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    color: white;
+    border-radius: 5px; /* Optional: to make it look smoother */
+    font-style: italic;
+}
+#search {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Center alignment fix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#search .location-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#search .location-dropdown select {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+#search input {
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+#search button {
+    background-color: #ff7e8b;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search button:hover {
+    background-color: #ff4f5e;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.boxes {
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ddd;
+    /* padding: 10px; */
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.boxes img {
+    display: flex;
+
+    border-radius: 8px;
+}
+
+.boxes h2, .boxes p {
+    display: flex;
+
+    margin: 5px 0;
+}
+
+.boxes button {
+    display: flex;
+
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boxes button:hover {
+    background-color: #ff2a00;
+}
+
+.boxes:hover {
+    transform: scale(1.05);
+}
+
